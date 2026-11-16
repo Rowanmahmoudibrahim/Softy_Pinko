@@ -1,0 +1,40 @@
+
+@media screen and (min-width: 992px) {
+    .work .rocket {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 767px) {
+    .work .rocket {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .work .title p {
+        width: 100% !important;
+    }
+
+    .work .rocket {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .work .rocket:active {
+        transform: translateY(-10px);
+
+        h5 {
+            color: colors.$red_color;
+        }
+
+        p {
+            color: colors.$black_color;
+        }
+    }
+}

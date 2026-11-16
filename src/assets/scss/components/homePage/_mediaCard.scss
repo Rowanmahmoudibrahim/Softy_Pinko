@@ -1,0 +1,35 @@
+
+.cards {
+    .row {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .cards .card {
+        margin-left: 1.5%;
+        width: 30%;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 992px) {
+    .cards .card {
+        margin-left: 1%;
+        width: 32%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .cards .card {
+        margin-left: 1%;
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .cards .card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

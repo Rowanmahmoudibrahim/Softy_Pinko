@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .contact {
+        margin-top: 60px;
+        padding: 60px 0;
+
+        .title {
+            p {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+
+        .form {
+            button {
+                display: block;
+                width: 100%;
+                margin: 20px auto 0 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+
+.blog {
+    text-align: center;
+
+    .title {
+        p {
+            color: colors.$txt_color;
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    .row {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .entry {
+        cursor: pointer;
+        margin: 0 auto 30px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .txt {
+            > h5 {
+                padding: 15px 0;
+
+                > a {
+                    color: colors.$black_color;
+                    transition: variables.$trans;
+                    text-decoration: none;
+                }
+            }
+
+            > p {
+                color: colors.$txt_color;
+                transition: variables.$trans;
+                line-height: 1.7;
+            }
+        }
+
+        &:hover {
+            .txt > h5 > a {
+                color: colors.$red_color;
+            }
+
+            .txt > p {
+                color: colors.$black_color;
+            }
+        }
+
+        button {
+            background-color: colors.$hover_color;
+            border-radius: variables.$radius;
+            border: none;
+            padding: 10px 20px;
+            transition: variables.$trans;
+
+            &:hover {
+                background-color: colors.$red_color;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .blog {
+        .row {
+            justify-content: center;
+        }
+
+        .entry {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .blog {
+        .title p {
+            width: 80%;
+        }
+
+        .entry {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog {
+        .title {
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                width: 100%;
+                font-size: 14px;
+                line-height: 1.7;
+            }
+        }
+
+        .entry {
+            margin-bottom: 40px;
+            padding: 0 15px;
+
+            .txt {
+                > h5 {
+                    font-size: 17px;
+                }
+
+                > p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .blog {
+        .title h3 {
+            font-size: 22px;
+        }
+
+        .entry {
+            padding: 0 8px;
+
+            button {
+                padding: 9px 16px;
+                font-size: 13px;
+            }
+        }
+    }
+}

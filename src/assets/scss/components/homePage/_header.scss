@@ -1,0 +1,48 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: calc(100% - 80px);
+    margin: 0;
+    padding: 15px 25px;
+    border-radius: calc(variables.$radius + 20px);
+    box-shadow: colors.$shadow;
+
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    right: auto;
+    z-index: 100;
+    transition: variables.$trans;
+
+    .container {
+        max-width: 100%;
+    }
+
+
+.custom-toggler {
+    border: 1px solid colors.$red_color;
+    padding: 8px;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
+    .links {
+        margin: 0 0 0 auto;
+        color: colors.$txt_color;
+        gap:18px;
+
+        a:hover {
+            color: colors.$red_color;
+        }
+
+        .active {
+            color: colors.$red_color;
+        }
+    }
+}

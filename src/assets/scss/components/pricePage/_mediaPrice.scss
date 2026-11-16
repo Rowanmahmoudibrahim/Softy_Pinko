@@ -1,0 +1,14 @@
+@media (max-width: 767px) {
+    .price {
+        .price-row {
+            justify-content: center;
+        }
+
+        .list {
+            width: 90%;
+            max-width: 90%;
+            flex: 0 0 90%;
+            margin: 10px auto;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+
+.count {
+    background-image: url('../images/fun-facts-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    text-align: center;
+
+    .rate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            .rate_num {
+                transform: translateY(-15px);
+            }
+        }
+
+        .rate_num {
+            transition: variables.$trans;
+            cursor: pointer;
+
+            p {
+                font-size: 35px;
+                font-weight: variables.$font_bold;
+
+                background: linear-gradient(
+                    90deg,
+                    #fff 0%,
+                    #fff 40%,
+                    #ff589e 50%,
+                    #fff 60%,
+                    #fff 100%
+                );
+
+                background-size: 250% 100%;
+                background-position: 100% center;
+
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+                animation: numberWave 2.5s ease-in-out infinite;
+            }
+
+            span {
+                color: colors.$white_color;
+            }
+        }
+
+        .img_rate {
+            margin-left: 100px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// Wave Animation
+@keyframes numberWave {
+    from {
+        background-position: 100% center;
+    }
+
+    to {
+        background-position: 0% center;
+    }
+}
+
+
+// Tablet
+@media (max-width: 991px) {
+    .count {
+        padding: 80px 20px;
+
+        .rate {
+            .rate_num {
+                p {
+                    font-size: 30px;
+                }
+            }
+
+            .img_rate {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+// Mobile
+@media (max-width: 767px) {
+    .count {
+        padding: 60px 15px;
+
+        .rate {
+            padding: 20px 10px;
+
+            .rate_num {
+                p {
+                    font-size: 32px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            // Hide decorative separators on mobile
+            .img_rate {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Small Mobile
+@media (max-width: 400px) {
+    .count {
+        padding: 45px 10px;
+
+        .rate {
+            .rate_num {
+                p {
+                    font-size: 28px;
+                }
+
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
